@@ -18,6 +18,7 @@ export default defineConfig( ({ command, mode })=> {
     },
     // vite下查找proxy，代理跨域
     server: {
+      port:81,
       proxy: {
         // 关键词， 如'/api'
         [env.VITE_APP_BASE_API]: {
